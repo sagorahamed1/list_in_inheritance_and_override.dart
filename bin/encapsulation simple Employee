@@ -1,0 +1,22 @@
+class Employee {
+  String? _name;
+  int? _id;
+
+   String get Name{
+     return _name!;
+   }
+
+  int get id {
+    return _id!;
+  }
+
+  set name(String name) {
+    _name = name;
+  }
+
+  set id(int id) {
+    _id = id;
+  }
+}
+
+
