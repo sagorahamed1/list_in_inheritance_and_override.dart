@@ -1,0 +1,32 @@
+class Vehicle {
+  String _model;
+  int _year;
+
+  Vehicle(String model, int year)
+      : this._model = model,
+        this._year = year;
+
+  String get model {
+    return _model;
+  }
+
+  int get year {
+    return _year;
+  }
+
+  set model(String model) {
+    _model = model;
+  }
+
+  set year(int year) {
+    _year = year;
+  }
+}
+
+import 'child class.dart';
+
+void main(){
+  var vehicle = Vehicle('X C 90', 2023);
+  print(vehicle.model);
+  print(vehicle.year);
+}
