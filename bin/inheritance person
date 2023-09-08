@@ -1,0 +1,32 @@
+class Person {
+  String? name;
+  int? age;
+
+  void displaysss(){
+    print('this is name of $name');
+    print('this is age: $age');
+  }
+}
+
+class Student extends Person {
+  String? schoolName;
+  String? addrass;
+
+  void display(){
+    print('this is school name $schoolName');
+    print('$addrass this is addrass');
+  }
+}
+
+
+import 'child class.dart';
+
+void main() {
+  var student = Student();
+  student.name = 'sagor ahamed';
+  student.age = 25;
+  student.schoolName = 'ABCDE';
+  student.addrass = 'Dhaka, Bangladesh';
+  student.displaysss();
+  student.display();
+}
