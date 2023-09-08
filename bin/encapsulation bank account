@@ -26,7 +26,7 @@ import 'child class.dart';
 void main(){
    var bankAcount = BankAcount();
    bankAcount.accountNo = '101010';
-   print(bankAcount.accountNo);
+   print("customer account No: ${bankAcount.accountNo}");
    bankAcount.deposite(2000);
    print(bankAcount.balance);
 
