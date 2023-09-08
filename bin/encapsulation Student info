@@ -1,0 +1,41 @@
+class Student {
+  String _firstName = '';
+  String _lastName = '';
+  int _rollNo = 0;
+
+  // Student(String firstName, String lastName, int rollNo)
+  // : this._firstName = firstName,
+  // this._lastName = lastName,
+  // this._rollNo = rollNo;
+
+
+    get fullName {
+     print('Student information: $_firstName $_lastName Roll no: $_rollNo');
+   }
+
+  // int get rollNo => _rollNo;
+
+  set firstName(String firstName) {
+    _firstName = firstName;
+  }
+
+  set lastName(String lastName) {
+    _lastName = lastName;
+  }
+
+  set rollNo(int rollNo) {
+    _rollNo = rollNo;
+  }
+}
+
+
+import 'child class.dart';
+
+void main(){
+   var student = Student();
+   student.firstName = 'Sagor';
+   student.lastName = 'ahamed';
+   student.rollNo =1;
+
+   print(student.fullName);
+}
