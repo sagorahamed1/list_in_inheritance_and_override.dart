@@ -1,31 +1,27 @@
-class Person {
-  String? name;
-  int? age;
+class Car {
+  String color;
+  int year;
+  Car(this.color, this.year);
 
-  void displaysss(){
-    print('this is name of $name');
-    print('this is age: $age');
+  void speed(){
+    print('color: $color and year: $year');
   }
 }
 
-class Student extends Person {
-  String? schoolName;
-  String? addrass;
+class Toyta extends Car{
+  String moden;
+  double prize;
+  Toyta(String color, int year, this.moden, this.prize): super(color,year);
 
-  void display(){
-    print('this is school name $schoolName');
-    print('$addrass this is addrass');
+  void speeds (){
+    print("this is car model: $moden and prize: $prize");
   }
 }
 
 import 'child class.dart';
 
 void main() {
-  var student = Student();
-  student.name = 'sagor ahamed';
-  student.age = 25;
-  student.schoolName = 'ABCDE';
-  student.addrass = 'Dhaka, Bangladesh';
-  student.displaysss();
-  student.display();
+  var toyta = Toyta('red', 2014, 'xz 19', 120000000);
+  toyta.speed();
+  toyta.speeds();
 }
