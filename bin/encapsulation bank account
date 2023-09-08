@@ -1,0 +1,35 @@
+class BankAcount{
+  String _acountNo = '';
+  double _balance = 0;
+
+  String get accountNo => _acountNo;
+  get balance => _balance;
+  set accountNo (String accountNo) {
+    _acountNo = accountNo;
+  }
+
+
+  deposite(double amount){
+    _balance += amount;
+  }
+ void withdraw(double amount){
+    if(amount > _balance){
+      throw Exception ('withdraw can not getter than balance');
+    }
+    else{
+      _balance -= amount;
+    }
+  }
+}
+
+import 'child class.dart';
+void main(){
+   var bankAcount = BankAcount();
+   bankAcount.accountNo = '101010';
+   print(bankAcount.accountNo);
+   bankAcount.deposite(2000);
+   print(bankAcount.balance);
+
+   bankAcount.withdraw(700);
+   print(bankAcount.balance);
+}
